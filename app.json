@@ -1,0 +1,35 @@
+{
+    "name": "VJ Channel Auto forward bot",
+    "description": "Telegram auto forwarding bot. Create your Fork now.",
+    "keywords": [
+        "telegram",
+        "simple",
+        "auto",
+        "forward"
+    ],
+    "success_url": "https://telegram.dog/VJ_Botz",
+    "repository": "https://github.com/VJBots/VJ-Auto-Forward-Bot",
+    "env": {
+        "AS_COPY": {
+            "description": "set this to true to forward message as copy",
+            "value": "False" 
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token, as a string. Get this from @BotFather",
+            "value": ""
+        },
+        "CHANNEL_ID": {
+            "description": "your channel id in format -10023352648:-100655379 (from channel id:to channel id) if you want to give more channels seperate them with white space",
+            "value": ""
+        }
+    },
+    "buildpacks": [{"url": "heroku/python"}]
+}
